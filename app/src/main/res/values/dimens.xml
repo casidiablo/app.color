@@ -1,0 +1,19 @@
+<resources>
+  <dimen name="filter_margin">10dp</dimen>
+  <dimen name="filter_selector_width">5dp</dimen>
+  <dimen name="check_mark_stroke">8dp</dimen>
+  <dimen name="filter_border_radius">12dp</dimen>
+  <dimen name="progress_stroke_width">8dp</dimen>
+  <dimen name="progress_radius">30dp</dimen>
+  <dimen name="progress_inner_padding">2dp</dimen>
+  <dimen name="pref_text_size">24sp</dimen>
+  <dimen name="handle_width">18dp</dimen>
+  <dimen name="screen_side_padding">4dp</dimen>
+  <dimen name="color_indicator_height">4dp</dimen>
+  <dimen name="cartoon_text_size">11sp</dimen>
+  <dimen name="dialog_width">420dp</dimen>
+  <dimen name="dialog_height">180dp</dimen>
+  <dimen name="gesture_thumbnail_inset">8dip</dimen>
+  <dimen name="gesture_thumbnail_size">64dip</dimen>
+  <dimen name="filter_bar_height">120dip</dimen>
+</resources>

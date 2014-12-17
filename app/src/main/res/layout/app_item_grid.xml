@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <ImageView
+    android:id="@+id/app_icon"
+    android:layout_width="55dp"
+    android:layout_height="55dp"
+    android:minWidth="@android:dimen/app_icon_size"
+    android:minHeight="@android:dimen/app_icon_size"
+    android:layout_gravity="center_horizontal" />
+
+  <TextView
+    android:id="@+id/app_label"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-condensed"
+    style="@style/AppItemGrid" />
+
+  <View
+    android:id="@+id/placeholder"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/filter_bar_height"
+    android:visibility="gone" />
+</LinearLayout>

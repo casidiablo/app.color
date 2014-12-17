@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/flat_bg">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:id="@+id/settings_root"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:divider="?android:dividerHorizontal"
+      android:showDividers="middle"
+      android:dividerPadding="22dp">
+
+      <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/app_name_settings"
+        android:textSize="30sp"
+        android:drawablePadding="5dp"
+        android:textAppearance="@style/SettingsTextAppearance" />
+
+
+      <app.color.view.PrefCheckBox
+        android:id="@+id/enable_app_color"
+        android:text="@string/enable_app_color"
+        style="@style/PrefCheckbox" />
+
+      <app.color.view.PrefCheckBox
+        android:id="@+id/show_notification_icon"
+        android:text="@string/show_notif_icon"
+        style="@style/PrefCheckbox" />
+
+      <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.8"
+          android:divider="?android:dividerHorizontal"
+          android:showDividers="middle">
+
+          <app.color.view.PrefCheckBox
+            android:id="@+id/active_area_position"
+            android:text="@string/active_area_position"
+            style="@style/PrefCheckboxPosition" />
+
+          <Button
+            android:id="@+id/active_area_gravity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/active_area_gravity"
+            android:textColor="@color/settings_text"
+            android:textSize="@dimen/pref_text_size"
+            android:background="@null" />
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/active_area_height_label"
+              android:text="@string/active_area_height"
+              style="@style/PrefCheckbox" />
+
+            <SeekBar
+              android:id="@+id/active_area_height"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:layout_marginRight="50dp"
+              android:layout_marginBottom="15dp"
+              style="@style/CustomSeekBar" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+        <app.color.view.CellPhoneView
+          android:id="@+id/cellphone"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.2"
+          android:layout_marginLeft="10dp"
+          android:layout_gravity="center_vertical"
+          android:layout_marginRight="10dp" />
+
+      </LinearLayout>
+
+      <app.color.view.PrefCheckBox
+        android:id="@+id/show_active_area"
+        android:text="@string/show_active_area"
+        style="@style/PrefCheckbox"
+        android:checked="false" />
+
+      <app.color.view.PrefCheckBox
+        android:id="@+id/haptic_feedback"
+        android:text="@string/haptic_feedback"
+        style="@style/PrefCheckbox" />
+
+      <app.color.view.PrefCheckBox
+        android:id="@+id/tap_to_select_color"
+        android:text="@string/tap_to_select_color"
+        style="@style/PrefCheckbox" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/sensitivity_label"
+          android:text="@string/color_sensitivity"
+          style="@style/PrefCheckbox" />
+
+        <SeekBar
+          android:id="@+id/sensitivity"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="50dp"
+          android:layout_marginBottom="15dp"
+          style="@style/CustomSeekBar" />
+      </LinearLayout>
+
+      <Button
+        android:id="@+id/refresh"
+        android:text="@string/force_refreshing"
+        style="@style/ButtonSettings" />
+
+      <app.color.view.PrefCheckBox
+        android:id="@+id/show_hidden_apps"
+        android:text="@string/show_hidden_apps"
+        style="@style/PrefCheckbox" />
+
+      <Button
+        android:id="@+id/tutorial"
+        android:text="@string/tutorial"
+        style="@style/ButtonSettings" />
+    </LinearLayout>
+  </ScrollView>
+
+  <app.color.view.ColorProgressBar
+    android:id="@+id/progress_bar"
+    android:layout_width="match_parent"
+    android:layout_height="4dp" />
+</FrameLayout>

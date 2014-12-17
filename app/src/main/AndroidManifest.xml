@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="app.color"
+  android:versionCode="6"
+  android:versionName="1.1">
+
+  <compatible-screens>
+    <!-- all small size screens -->
+    <screen
+      android:screenSize="small"
+      android:screenDensity="ldpi" />
+    <screen
+      android:screenSize="small"
+      android:screenDensity="mdpi" />
+    <screen
+      android:screenSize="small"
+      android:screenDensity="hdpi" />
+    <screen
+      android:screenSize="small"
+      android:screenDensity="xhdpi" />
+    <!-- all normal size screens -->
+    <screen
+      android:screenSize="normal"
+      android:screenDensity="ldpi" />
+    <screen
+      android:screenSize="normal"
+      android:screenDensity="mdpi" />
+    <screen
+      android:screenSize="normal"
+      android:screenDensity="hdpi" />
+    <screen
+      android:screenSize="normal"
+      android:screenDensity="xhdpi" />
+
+    <screen
+      android:screenDensity="480"
+      android:screenSize="normal" />
+  </compatible-screens>
+
+  <uses-sdk
+    android:minSdkVersion="16"
+    android:targetSdkVersion="19" />
+
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="com.android.vending.BILLING" />
+
+  <application
+    android:name=".core.AppColor"
+    android:allowBackup="true"
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme"
+    android:hardwareAccelerated="true">
+    <activity
+      android:name=".activity.SettingsActivity"
+      android:label="@string/app_name"
+      android:launchMode="singleTop">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+      android:name=".activity.TutorialActivity"
+      android:screenOrientation="portrait"
+      android:configChanges="orientation|keyboardHidden|keyboard|screenLayout|touchscreen|screenSize|smallestScreenSize"
+      android:label="@string/app_name" />
+    <activity
+      android:label="@string/app_gestures"
+      android:name=".activity.GesturesListActivity" />
+    <activity
+      android:name=".activity.OverlayActivity"
+      android:label="@string/app_name"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar"
+      android:excludeFromRecents="true">
+      <intent-filter>
+        <action android:name="android.intent.action.ASSIST" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+
+    <service
+      android:name=".service.OverlayService"
+      android:exported="true" />
+    <service android:name="com.telly.groundy.GroundyService" />
+
+    <receiver android:name=".receiver.BootReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+
+    <meta-data
+      android:name="com.crashlytics.ApiKey"
+      android:value="a4116b35802abe75aeff64b609bff5263191a101" />
+
+    <receiver
+      android:name=".widget.AppColorWidget"
+      android:label="@string/app_name">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/app_color_widget" />
+    </receiver>
+  </application>
+</manifest>

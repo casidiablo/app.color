@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="MaxWidthLinearLayout">
+    <attr name="maxWidthView" format="dimension" />
+  </declare-styleable>
+  <declare-styleable name="ColorProgressBar">
+    <attr name="fixed" format="boolean" />
+  </declare-styleable>
+</resources>

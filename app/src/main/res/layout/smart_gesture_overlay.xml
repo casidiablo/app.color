@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <android.gesture.GestureOverlayView
+    android:id="@+id/gestures_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gestureStrokeType="multiple" />
+
+  <ImageButton
+    android:id="@+id/admin_gestures"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_margin="10dp"
+    android:src="@drawable/ic_action_settings"
+    android:background="@drawable/list_selector" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@id/admin_gestures"
+    android:gravity="center_vertical"
+    android:drawablePadding="10dp"
+    android:text="@string/draw_a_registered_gesture"
+    android:fontFamily="sans-serif-condensed"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+</merge>

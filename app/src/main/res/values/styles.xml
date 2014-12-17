@@ -1,0 +1,146 @@
+<resources>
+
+  <style name="AppTheme" parent="@android:style/Theme.NoTitleBar">
+    <item name="android:alertDialogTheme">@android:style/Theme.Holo.Dialog</item>
+    <item name="android:buttonStyle">@style/FlatButton</item>
+  </style>
+
+  <style name="AppColorDialogTheme" parent="@android:style/Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="fullDialog">@style/FullDialog</item>
+    <item name="android:buttonStyle">@style/FlatSendButton</item>
+  </style>
+
+  <style name="OptionButton" parent="android:Widget.Holo.Button">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_gravity">center_vertical</item>
+  </style>
+
+  <style name="SearchEditText" parent="android:Widget.EditText">
+    <item name="android:background">@drawable/edit_text_holo_light</item>
+    <item name="android:textColor">#ecf0f1</item>
+  </style>
+
+  <style name="SettingsTextAppearance">
+    <item name="android:textColor">@color/settings_text</item>
+    <item name="android:textSize">@dimen/pref_text_size</item>
+    <item name="android:textStyle">normal</item>
+  </style>
+
+  <style name="PrefCheckbox" parent="android:Widget.Holo.CheckedTextView">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">10dp</item>
+    <item name="android:layout_marginLeft">20dp</item>
+    <item name="android:layout_marginRight">20dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textAppearance">@style/SettingsTextAppearance</item>
+    <item name="android:checkMark">@drawable/pref_checkbox</item>
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:background">#00000000</item>
+  </style>
+
+  <style name="PrefCheckboxPosition" parent="PrefCheckbox">
+    <item name="android:checkMark">@null</item>
+  </style>
+
+  <style name="CustomSeekBar" parent="android:Widget.SeekBar">
+    <item name="android:progressDrawable">@drawable/custom_seek_bar</item>
+    <item name="android:thumb">@drawable/seek_bar_thumb</item>
+    <item name="android:thumbOffset">0dip</item>
+  </style>
+
+  <style name="FlatDialog" parent="android:Theme.Holo.Dialog.NoActionBar.MinWidth" />
+
+  <style name="ButtonSettings">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:padding">10dp</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:textColor">@color/settings_text</item>
+    <item name="android:textSize">@dimen/pref_text_size</item>
+    <item name="android:background">@null</item>
+  </style>
+
+  <attr name="featuresInfo" format="reference" />
+  <attr name="fullDialog" format="reference" />
+
+  <style name="TextViewFeaturesInfo">
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:fontFamily">sans-serif-light</item>
+    <item name="android:textSize">13sp</item>
+    <item name="android:textColor">#cccccc</item>
+  </style>
+
+  <style name="FlatButton" parent="@android:style/Widget.Button">
+    <item name="android:background">@drawable/flat_button</item>
+    <item name="android:textColor">#ffffffff</item>
+    <item name="android:padding">10dp</item>
+    <item name="android:textSize">22sp</item>
+    <item name="android:fontFamily">sans-serif-condensed</item>
+  </style>
+
+  <style name="FlatSendButton" parent="FlatButton">
+    <item name="android:background">@drawable/flat_send_button</item>
+  </style>
+
+  <style name="FullDialog">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:minWidth">@dimen/dialog_width</item>
+    <item name="android:minHeight">@dimen/dialog_height</item>
+    <item name="android:layout_margin">10dp</item>
+    <item name="android:padding">6dp</item>
+    <item name="android:background">@color/flat_bg</item>
+  </style>
+
+  <style name="AppItemList" parent="android:Widget.Holo.TextView">
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:padding">3dp</item>
+    <item name="android:drawablePadding">5dp</item>
+    <item name="android:focusable">false</item>
+    <item name="android:textColor">@color/item_text_color</item>
+    <item name="android:shadowColor">@color/item_text_shadow_color</item>
+    <item name="android:shadowRadius">1</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:textSize">13sp</item>
+  </style>
+
+  <style name="AppItemGrid" parent="@style/AppItemList">
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="TabText">
+    <item name="android:textColor">@color/item_text_color</item>
+    <item name="android:shadowColor">@color/item_text_shadow_color</item>
+    <item name="android:shadowRadius">1</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:ellipsize">marquee</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:layout_width">0dip</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingBottom">10dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:minWidth">80dip</item>
+    <item name="android:gravity">center</item>
+    <item name="android:background">@drawable/tab_indicator_holo</item>
+    <item name="android:button">@null</item>
+    <item name="android:fontFamily">sans-serif-condensed</item>
+  </style>
+
+  <style name="Dialog.NoFrame" parent="@android:style/Theme.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+</resources>

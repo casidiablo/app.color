@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'crashlytics'
+
+dependencies {
+  compile project(':madness')
+  compile 'com.telly:groundy:1.5'
+  apt 'com.telly:groundy-compiler:1.5'
+  compile 'com.codeslap:persistence:0.9.24'
+  compile 'com.crashlytics.android:crashlytics:1.+'
+  compile 'com.squareup.picasso:picasso:2.1.1'
+  compile 'org.jsoup:jsoup:1.7.3'
+  compile 'joda-time:joda-time:2.1'
+  compile 'com.jakewharton.timber:timber:2.2.2'
+  compile 'com.jakewharton:butterknife:+'
+}
+
+android {
+  compileSdkVersion 19
+  buildToolsVersion '20.0.0'
+
+  signingConfigs {
+    release {
+      storeFile file("${System.env.HOME}/Dropbox/keys/app.color.jks")
+      storePassword appColorStorePass
+      keyAlias 'app'
+      keyPassword appColorKeyPass
+    }
+  }
+
+  buildTypes {
+    release {
+      signingConfig signingConfigs.release
+    }
+  }
+}

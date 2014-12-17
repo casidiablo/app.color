@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+  android:initialLayout="@layout/app_color_widget"
+  android:minWidth="@android:dimen/app_icon_size"
+  android:minHeight="@android:dimen/app_icon_size"
+  android:widgetCategory="home_screen"
+  android:resizeMode="none" />

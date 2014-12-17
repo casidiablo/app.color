@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/flat_bg">
+
+    <app.color.view.ColorProgressBar
+      android:id="@+id/progress_bar"
+      android:layout_width="match_parent"
+      android:layout_height="4dp" />
+
+    <LinearLayout
+      android:id="@+id/bottom_bar"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:padding="4dp">
+
+      <ImageView
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:src="@drawable/left"
+        android:visibility="invisible" />
+
+      <TextView
+        android:id="@+id/tutorial_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:minLines="3"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      <ImageView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:src="@drawable/right" />
+
+    </LinearLayout>
+
+    <app.color.view.CellPhoneView
+      android:id="@+id/phone"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_below="@id/progress_bar"
+      android:layout_above="@id/bottom_bar"
+      android:layout_centerHorizontal="true"
+      android:layout_margin="4dp" />
+  </RelativeLayout>
+
+  <app.color.view.FingerView
+    android:id="@+id/finger"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/app_icon_widget"
+  android:layout_width="@android:dimen/app_icon_size"
+  android:layout_height="@android:dimen/app_icon_size"
+  android:src="@drawable/ic_launcher" />

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:id="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <ImageView
+      android:id="@+id/action_bar_icon"
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+      android:layout_marginLeft="12dp"
+      android:layout_marginRight="12dp"
+      android:layout_centerVertical="true"
+      android:src="@drawable/ic_launcher" />
+
+    <EditText
+      android:id="@+id/search_box"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/action_bar_icon"
+      android:visibility="gone"
+      android:inputType="text|textCapWords"
+      style="@style/SearchEditText" />
+
+    <RadioGroup
+      android:id="@+id/radio_group"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/action_bar_icon">
+
+      <RadioButton
+        android:id="@+id/sort_by_name"
+        android:text="@string/name"
+        android:checked="true"
+        style="@style/TabText" />
+
+      <RadioButton
+        android:id="@+id/sort_by_usage"
+        android:text="@string/usage"
+        android:enabled="false"
+        style="@style/TabText" />
+
+      <ImageButton
+        android:id="@+id/gestures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_gesture"
+        android:contentDescription="@string/gestures"
+        android:background="@drawable/list_selector"
+        android:hapticFeedbackEnabled="true" />
+
+      <ImageView
+        android:id="@+id/search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_search"
+        android:contentDescription="@string/search" />
+
+      <ImageButton
+        android:id="@+id/overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_core_overflow"
+        android:contentDescription="@string/options"
+        android:background="@drawable/list_selector"
+        android:hapticFeedbackEnabled="true" />
+
+    </RadioGroup>
+  </RelativeLayout>
+
+  <app.color.view.BlurredGridView
+    android:id="@+id/apps_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/action_bar"
+    android:listSelector="@drawable/list_selector"
+    android:numColumns="4" />
+
+  <app.color.view.FilterView
+    android:id="@+id/filter_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/filter_bar_height"
+    android:layout_alignParentBottom="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/filters_background" />
+
+  <TextView
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="5dip"
+    android:layout_above="@id/filter_view"
+    android:gravity="center"
+    android:drawablePadding="10dip"
+    android:fontFamily="sans-serif-condensed"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@color/quote_text_color"
+    android:shadowColor="@color/item_text_shadow_color"
+    android:shadowRadius="1"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:layout_weight="0.75" />
+
+</merge>

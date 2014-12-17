@@ -1,0 +1,28 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    maven { url 'http://download.crashlytics.com/maven' }
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.14.2'
+    classpath 'com.neenbedankt.gradle.plugins:android-apt:1.2'
+    classpath 'com.crashlytics.tools.gradle:crashlytics-gradle:1.+'
+  }
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.1'
+}
+
+allprojects {
+  repositories {
+    jcenter()
+    mavenCentral()
+    maven {
+      url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+    maven {
+      url 'http://download.crashlytics.com/maven'
+    }
+  }
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">App Color</string>
+  <string name="app_color_running">App Color is running</string>
+  <string name="search">Search</string>
+  <string name="tap_to_settings">Tap to open settings</string>
+  <string name="show_notif_icon">Show notification icon</string>
+  <string name="haptic_feedback">Haptic feedback</string>
+  <string name="force_refreshing">Force database refreshing</string>
+  <string name="enable_app_color">Enable App Color</string>
+  <string name="app_name_settings">App Color Settings</string>
+  <string name="color_sensitivity">Color detection sensitivity</string>
+  <string name="show_active_area">Show handle</string>
+  <string name="active_area_height">Active area height</string>
+  <string name="active_area_position">Toggle left/right</string>
+  <string name="active_area_gravity">Toggle gravity</string>
+  <string name="options">Options</string>
+  <string name="gestures">Gestures</string>
+  <string name="launch_app">Launch %s</string>
+  <string name="launch_play_store">Open Play Store</string>
+  <string name="launch_in_play_store">Open in Play Store</string>
+  <string name="show_app">Show app</string>
+  <string name="hide_app">Hide app</string>
+  <string name="uninstall_app">Uninstall app</string>
+  <string name="mark_as_favorite">Mark as favorite</string>
+  <string name="unmark_favorite">Remove from favorites</string>
+  <string name="open_settings">Open settings</string>
+  <string name="help">Help</string>
+  <string name="tap_to_select_color">Tap to select color</string>
+  <string name="swipe_explanation">Wherever you are, just swipe from that little handle at the edge of the screen</string>
+  <string name="filter_explanation">Instant access to all your apps and you can filter by name or color!</string>
+  <string name="filter_explanation2">You can drag through the color list to make things fast!</string>
+  <string name="filter_explanation3">Isn\'t this the funniest, non-game app you have ever seen?</string>
+  <string name="tutorial">Tutorial</string>
+  <string name="name">Sort by Name</string>
+  <string name="usage">Sort by Usage</string>
+  <string name="no_gestures">No gestures. Add one by pressing and holding an app.</string>
+  <string name="gestures_delete_success">Gesture deleted</string>
+  <string name="gestures_error_loading">Could not load gestures.</string>
+  <string name="gestures_loading">Loading gestures…</string>
+  <string name="register_gesture">Associate gesture</string>
+  <string name="assign_gesture_to">Draw a gesture for %s</string>
+  <string name="no_gesture_drawn">You have not drawn any gesture</string>
+  <string name="gesture_successful">Gesture registered successfully</string>
+  <string name="gesture_already_used_for">Gesture already used for %s</string>
+  <string name="cant_recognize_gesture">Can\'t recognize gesture</string>
+  <string name="recognized_gesture_fail">Gesture recognized but app does not exist</string>
+  <string name="draw_a_registered_gesture">Go mad and draw something</string>
+  <string name="press_and_hold_gestures">No gestures saved. Press and hold an app to register one</string>
+  <string name="gestures_delete">Delete gesture</string>
+  <string name="show_hidden_apps">Show hidden apps</string>
+  <string name="empty_search">Could not find \"%s\".\n\nClick here to search in the Play Store.</string>
+  <string name="empty_exact_single">There are no apps that only have the selected color.\n\n
+    Click here to uncheck Exact Matcher.</string>
+  <string name="empty_exact_plural">There are no apps that only have the selected colors.\n\n
+    Click here to uncheck Exact Matcher.</string>
+  <string name="updating_apps_database">Updating apps database…</string>
+  <string name="app_info">App Info</string>
+  <string name="app_gestures">App Gestures</string>
+
+  <string-array name="sensitivity_label">
+    <item>Color sensitivity</item>
+    <item>Determines how many pixels are required to classify an app into certain color category.
+      For
+      example: maximum sensitivity will include colors into the blue filter, even if there are no
+      many blue pixels. On
+      the other hand, minimum sensitivity means that apps filtered by blue must have several blue
+      pixels in order to to
+      be taken into account
+    </item>
+  </string-array>
+
+  <string-array name="enable_app_color">
+    <item>Toggle App Color</item>
+    <item>Enables (a.k.a. being cool) or disables (a.k.a. not being cool) the whole app.</item>
+  </string-array>
+
+  <string-array name="show_notification_icon">
+    <item>Toggle notification icon</item>
+    <item>Removes or shows the icon from the status bar. It will always be shown in the notification
+      area though.
+    </item>
+  </string-array>
+
+  <string-array name="active_area_position">
+    <item>Toggles left or right position</item>
+    <item>Indicates which edge of the screen you must swipe from in order to launch App Color</item>
+  </string-array>
+
+  <string-array name="active_area_gravity">
+    <item>Toggles active area gravity</item>
+    <item>By default, the active area is located at the center of the screen. Keep in mind that
+      placing it in the
+      bottom of the screen might interfere with the keyboard.
+    </item>
+  </string-array>
+
+  <string-array name="active_area_height_label">
+    <item>Active area height</item>
+    <item>Determines how big is the active are</item>
+  </string-array>
+
+  <string-array name="show_active_area">
+    <item>Show handle</item>
+    <item>Shows/hides visible small handle in the active area</item>
+  </string-array>
+
+  <string-array name="haptic_feedback">
+    <item>Haptic feedback</item>
+    <item>Vibrates when touching app filters</item>
+  </string-array>
+
+  <string-array name="tap_to_select_color">
+    <item>Tap to select</item>
+    <item>If checked, you must click the filter to activate it. If not, it will be activated on
+      touch,
+      which means you can touch and drag to activate many filters in a single swipe.
+    </item>
+  </string-array>
+
+  <string-array name="refresh">
+    <item>Database refresh</item>
+    <item>This will scan all your apps and update the indices used to filter them by color. You must
+      do this for the
+      sensitivity changes to be reflected on the app behavior; or just for fun.
+    </item>
+  </string-array>
+
+  <string-array name="tutorial">
+    <item>Launches tutorial</item>
+    <item>Launches a tutorial with a nice, hypnotic, flat finger swinging around the screen. Launch
+      this if
+      you are bored or sad. It will make your day.
+    </item>
+  </string-array>
+
+  <string-array name="show_hidden_apps">
+    <item>Shows hidden apps</item>
+    <item>This will allow you to show apps you hid previously; that way you can mark them as visible
+      again.
+    </item>
+  </string-array>
+</resources>

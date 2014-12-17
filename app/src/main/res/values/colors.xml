@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="filter_rect">#44000000</color>
+  <color name="wallpaper_overlay_edges">#22000000</color>
+  <color name="wallpaper_overlay">#55000000</color>
+  <color name="overlay_view_bg">#cc000000</color>
+  <color name="meta_overlay_view_bg">#77000000</color>
+  <color name="black_face_color">#44ffffff</color>
+  <color name="face_color">#44000000</color>
+  <color name="filter_bg">#33000000</color>
+  <color name="item_text_color">#ffffff</color>
+  <color name="tutorial_filter_overlay">#99ffffff</color>
+  <color name="item_text_shadow_color">#000000</color>
+  <color name="quote_text_color">#ffffffff</color>
+  <color name="highlight_color">#d35400</color>
+  <color name="pref_text_color">#8090a2</color>
+  <color name="pref_text_color_pressed">#bbcbdd</color>
+  <color name="pref_text_color_disabled">#ff454750</color>
+  <color name="flat_bg">#2a3643</color>
+  <color name="handle_color">#55ffffff</color>
+  <color name="settings_mode">#3498db</color>
+  <color name="phone_bg">#ffffff</color>
+  <color name="phone_screen">#7d7d7d</color>
+  <color name="phone_hard_button">#ffc6c6c6</color>
+  <color name="speaker">#dddddd</color>
+  <color name="sensors">#5b5b5b</color>
+  <color name="camera">#525252</color>
+  <color name="camera2">#6d6d6d</color>
+  <color name="camera3">#646464</color>
+  <color name="cartoon_action_bar">#310d54</color>
+  <color name="cartoon_items">#44ffffff</color>
+  <color name="cartoon_sublabel">#6673a81d</color>
+  <color name="filters_background">#55ffffff</color>
+</resources>
